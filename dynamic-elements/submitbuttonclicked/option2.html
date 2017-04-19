@@ -1,0 +1,33 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Draggable - Default functionality</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+</head>
+<body>
+<form>
+	<input type="text">
+    <input type="button" name="submit" id="1111" class="submit" value="submit">
+</form>
+
+<script type="text/javascript">
+	$(".submit").click(function(){
+		$(this).attr('id',  makeid() + "1111" );
+	});
+	
+	function makeid(){
+	    var text = "";
+    	var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+	    for( var i=0; i < 5; i++ )
+    	    text += possible.charAt(Math.floor(Math.random() * possible.length));
+	    return text;
+	}
+</script>
+
+</body>
+</html>
