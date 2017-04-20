@@ -322,7 +322,7 @@
 
 /* My css */
 .navbar-brand{
-	padding: 0 15px;
+	padding: 10px 15px;
 }
 
 .panel-title a{
@@ -357,11 +357,6 @@
 
 .navbar-nav.navbar-right:last-child{
 	margin-right: 0;
-}
-
-.navbar-brand img{
-	border-top: 5px solid white;
-    border-bottom: 5px solid white;
 }
 
 a:focus{
